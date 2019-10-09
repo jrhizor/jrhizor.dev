@@ -2,9 +2,7 @@
 <a class=sidebar-nav-item href=/posts/ title=Posts>Posts &#187;</a></nav></header><main><ul class=posts><li class="first postheader"><span class=date>2019-10-02</span>
 <a href=https://jrhizor.dev/posts/test-post/>Test post</a></li></ul><div id=post><p>Here&rsquo;s a <a href=https://www.google.com>bunch of text</a> that will be used to show just how much stuff there is to do and say about the topic of static site creation and generation. It&rsquo;s quite amazing how much work can go into making a glorified text document.</p><p>There&rsquo;s even more to say for a bunch of text that will be used to show just how much stuff there is to do and say about the topic of static site creation and generation. It&rsquo;s quite amazing how much work can go into making a glorified text document.</p></div><div id=comments><h2>Comments</h2><p><em>You can leave a comment using this <a href=https://github.com/jrhizor/jrhizor.github.io/issues/1>GitHub issue</a>.</em></p><script>var id=1;if(id)
 {let url="https://github.com/jrhizor/jrhizor.github.io/issues/".concat(id);let api_url="https://api.github.com/repos/jrhizor/jrhizor.github.io/issues/".concat(id,"/comments");var commentsDiv=document.getElementById("comments");let xhr=new XMLHttpRequest();xhr.responseType="json";xhr.open("GET",api_url);xhr.setRequestHeader("Accept","application/vnd.github.v3.html+json");xhr.send();xhr.onload=function()
-{if(xhr.status!=200)
-{let errorText=document.createElement("p");errorText.innerHTML="<i>Comments for this post yet are not opened yet (or you have GitHub scripts disabled).</i>";commentsDiv.appendChild(errorText);}
-else
+{if(xhr.status==200)
 {let comments=xhr.response;comments.forEach(function(comment)
 {let commentContent=document.createElement("div");commentContent.setAttribute('class','gh-comment')
 commentContent.setAttribute('id','comment-'+comment.id)
