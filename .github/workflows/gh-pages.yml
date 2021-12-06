@@ -16,6 +16,8 @@ jobs:
         hugo-version: '0.58.3'
     - name: generate
       run: hugo --gc --minify --cleanDestinationDir
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     - name: deploy
       uses: peaceiris/actions-gh-pages@v2.4.0
       env:
