@@ -3,54 +3,48 @@
   padding:0;
   border:0;
   line-height:1.625em;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   padding:2.25em;
-  max-width: 31.25em;
+  padding-left: 6.75em;
+  max-width:50em;
 }
 
-header img.actualhead {
-  height: 1.3125em;
-  width: 1.3125em;
-  margin-top:1em;
-  margin-bottom:0.5em;
-}
-
-header h1 {
+header h3 {
   font-weight: bold;
-  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
-  border-top: 0.1875em #ccc solid;
-  font-size: 1.125em;
-  padding-top: 0.8em;
+  font-size: 0.8125em;
 }
 
 header nav {
-  padding-bottom: 0.6em;
-  border-bottom: 0.1875em #ccc solid;
-  font-size: 1.125em;
-  margin-bottom:0.625em;
+  font-size: 0.8125em;
+  color: #8256BF;
+  margin-top: 0.5em;
+  margin-bottom: 2.35em;
+}
+
+nav strong {
+  padding: 0.3125em;
+  padding-left: 0;
 }
 
 nav a {
-  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
   text-decoration:none;
-  color:#000;
+  color: #8256BF;
   margin-right: 0.625em;
+  padding: 0.3125em;
 }
 
-nav:hover a, nav a.active {
-  border-bottom:0.125em solid #ccc;
+nav a.active {
+  background: rgba(130, 86, 191, 0.15);
 }
 
 nav:hover a:hover {
-  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
-  text-decoration:none;
-  border-bottom:0.125em solid #333;
+  background: rgba(130, 86, 191, 0.30);
 }
 
 main p, main ul, main blockquote, main code {
-  font-family: 'Lora', 'Georgia', serif;
   font-size: 0.9375em;
   margin-bottom:0.9375em;
 }
@@ -60,8 +54,6 @@ main ul.posts {
 }
 
 main ul.posts li {
-  font-family:"Share Tech Mono",Helvetica,Arial,sans-serif;
-  border-top: 0.0625em #ccc solid; 
   line-height: 1.125em; 
   margin-top: 0.5em; 
   padding-top:0.625em;
@@ -79,32 +71,34 @@ main ul.posts li.first {
   padding-top:0;
 }
 
-main ul.posts li .date {
+.date {
   font-size:0.75em;
+  color: #aaa;
   display:block;
+}
+
+.date-single {
+  color: #aaa;
 }
 
 main ul.posts li a {
   font-size:1.125em;
   color:#000;
   text-decoration: none;
+  border-bottom: 0;
 }
 
 main ul.posts li:hover a {
-  border-bottom:0.125em solid #999
+
 }
 
 main ul.posts li:hover a:hover {
-  border-bottom:0.125em solid #333
+
 }
 
 .footer {
-  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
-  font-size:0.875em; 
+  font-size: 0.8125em;
   color:#666; 
-  border-top: 0.0625em #ccc solid; 
-  margin-top: 0.5em; 
-  padding-top:0.625em; 
 }
 
 #post p {
@@ -218,7 +212,6 @@ blockquote p {
 }
 
 #comments h2 {
-  font-family: "Share Tech Mono", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size:1.125em;
   border-top: 0.1875em #ccc solid;
@@ -228,4 +221,30 @@ blockquote p {
   padding-bottom:0.5em;
   margin-bottom:0.9375em;
   margin-top:0;
+}
+
+hr {
+  background: #ddd;
+  height:0.0625em;
+  margin-top: 1.25em; 
+  margin-bottom: 1.25em;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 0.625em;
+}
+
+nav + hr.colorful {
+  margin-top: 3em;
+}
+
+hr.colorful {
+  height:1px; 
+  background:#0597F2;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  padding:0;
+  line-height: 0.2em;
 }
