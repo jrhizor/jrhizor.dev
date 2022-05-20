@@ -1,11 +1,9 @@
 {{ define "main" }}
 <main>
-  <ul class="posts">
-    <li class="first postheader">
-      <span class="date">{{.Date.Format "2006-01-02"}}</span>
-      <a href="{{.Permalink}}">{{.Title}}</a>
-    </li>
-  </ul>
+
+  <h1>{{.Title}}</h1>
+
+  <p class="date-single">{{.Date.Format "2006-01-02"}}</p>
 
   <div id="post">
     {{ .Content }}

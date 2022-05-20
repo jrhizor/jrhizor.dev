@@ -1,10 +1,22 @@
 <header>
-    <a href="/"><img src="/favicon.png" class="actualhead" alt="Jared Rhizor"></a>
-    <h1>Jared Rhizor builds software.</h1>
+    <svg viewbox="0 0 35 100" style="width:2.25em; height: auto;">
+        <rect x="0" y="62" width="5" height="38" style="fill:#0597F2;" />
+        <rect x="10" y="0" width="5" height="100" style="fill:#04C4D9;" />
+        <rect x="20" y="0" width="5" height="100" style="fill:#F2561D;" />
+        <rect x="30" y="0" width="5" height="38" style="fill:#D93D3D;" />
+    </svg>
+
     <nav>
+      <strong>Jared Rhizor</strong>
+
       {{ $currentPage := . }}
       {{ range .Site.Menus.navmenu }}
-      <a class="sidebar-nav-item{{if ($currentPage.IsMenuCurrent "navmenu" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}  &#187;</a>
+      <a class="sidebar-nav-item{{if ($currentPage.IsMenuCurrent "navmenu" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
       {{ end }}
+
+      <a href="https://github.com/jrhizor" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/jrhizor/" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/jaredrhizor" target="_blank">Twitter</a>
     </nav>
+
   </header>

@@ -11,3 +11,4 @@ sectionPagesMenu = "navmenu"
     name = "About"
     title = "About"
     url = "/"
+    weight = 1
