@@ -1,29 +1,22 @@
 <header>
-  <svg viewbox="0 0 35 100" style="display: block; position:absolute; left:2.25em; top:2.25em; color:#3191e7;width:2.25em; height: auto;">
-        <!-- greenish mold --> 
-        <!-- <rect x="0" y="62" width="5" height="38" style="fill:#d0d058;" />
-        <rect x="10" y="0" width="5" height="100" style="fill:#a0a840;" />
-        <rect x="20" y="0" width="5" height="100" style="fill:#708028;" />
-        <rect x="30" y="0" width="5" height="38" style="fill:#405010;" /> -->
-        
-        <!-- splash of color blade runner -->
+    <svg viewbox="0 0 35 100" style="width:2.25em; height: auto;">
         <rect x="0" y="62" width="5" height="38" style="fill:#0597F2;" />
         <rect x="10" y="0" width="5" height="100" style="fill:#04C4D9;" />
         <rect x="20" y="0" width="5" height="100" style="fill:#F2561D;" />
         <rect x="30" y="0" width="5" height="38" style="fill:#D93D3D;" />
-      </svg>
+    </svg>
 
     <nav>
-      <strong>Jared Rhizor</strong> &nbsp;
+      <strong>Jared Rhizor</strong>
+
       {{ $currentPage := . }}
       {{ range .Site.Menus.navmenu }}
       <a class="sidebar-nav-item{{if ($currentPage.IsMenuCurrent "navmenu" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
       {{ end }}
+
+      <a href="https://github.com/jrhizor" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/jrhizor/" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/jaredrhizor" target="_blank">Twitter</a>
     </nav>
-<!-- 
-      <hr class="colorful" style="background:#0597F2;">
-      <hr class="colorful" style="background:#04C4D9;">
-      <hr class="colorful" style="background:#F2561D;">
-      <hr class="colorful" style="background:#D93D3D;"> -->
 
   </header>
