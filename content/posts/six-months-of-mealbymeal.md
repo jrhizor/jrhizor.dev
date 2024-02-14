@@ -10,7 +10,7 @@ logging foods over voice is useful. Here's what I learned over the course of the
 
 ### 1. Easy logging encourages retention
 
-Retention is critical because MyFitnessPal is an advertising behemoth. They expect users to churn after a couple months, but they can keep themselves as the default option anyone looking for a calorie tracker by spending a ton of money on ads. This allows them to market to users at the right moment when they start looking for a calorie tracking or weiht loss option, and makes it very expensive for competitors to compete on paid marketing to acquire users. You need a niche or a unique distribution channel.
+Retention is critical because MyFitnessPal is an advertising behemoth. They expect users to churn after a couple months, but they can keep themselves as the default option for anyone looking for a calorie tracker by spending a ton of money on ads. This allows them to market to users at the right moment when they start looking for a calorie tracking or weight loss option, and makes it very expensive for competitors to compete on paid marketing to acquire users. You need a niche or a unique distribution channel.
 
 
 So one way to make user acquisition cost-effective is to increase the average subscription length. For MealByMeal, I bet that easier logging would help retain users. I found this to be mostly true. If users didn't churn from the trial, \~2/3 of users maintained their subscriptions over multiple months.
@@ -27,10 +27,10 @@ I will likely launch an app version of MealByMeal to mitigate a lot of these pro
 
 ### 3. Logging foods over voice is useful
 
-I haven't explored this enough yet. Most of my users log by typing and not by saying "hey siri, text mealbymeal that I had a banana". Even the big players like MyFitnessPal don't have Siri integrations, which seems a bit crazy.
+I haven't explored this enough yet. Most of my users log by typing and not by saying, "hey siri, text mealbymeal that I had a banana". Even the big players like MyFitnessPal don't have Siri integrations, which seems a bit crazy.
 
 
-I haven't had much success yet in marketing MealByMeal towards people that would benefit most from this, but it's a work in progress.
+I haven't had much success yet in marketing MealByMeal to people who would benefit most from voice logging, but it's a work in progress.
 
 ---
 
