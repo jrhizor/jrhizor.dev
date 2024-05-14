@@ -43,7 +43,7 @@ nav:hover a:hover {
   background: rgba(130, 86, 191, 0.30);
 }
 
-main p, main ul, main ol, main blockquote, main code {
+main p, main ul, main blockquote, main code {
   font-size: 0.9375em;
   margin-bottom:0.9375em;
 }
@@ -116,6 +116,12 @@ main ul.posts li:hover a:hover {
 #post h3 {
   line-height: 1.625em;
   padding-bottom: 0.8125em;
+}
+
+#post ol, #post ul {
+  line-height: 1.625em;
+  font-size: 0.9375em;
+  margin-bottom:0.9375em;
 }
 
 
