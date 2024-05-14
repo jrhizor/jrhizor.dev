@@ -43,7 +43,7 @@ nav:hover a:hover {
   background: rgba(130, 86, 191, 0.30);
 }
 
-main p, main ul, main blockquote, main code {
+main p, main ul, main ol, main blockquote, main code {
   font-size: 0.9375em;
   margin-bottom:0.9375em;
 }
@@ -119,13 +119,13 @@ main ul.posts li:hover a:hover {
 }
 
 
-p a, ul a { 
+p a, ul a, ol a { 
   text-decoration:none;
   color:#000; 
   border-bottom:0.125em solid #ccc;
 }
 
-p:hover a:hover, ul:hover a:hover {
+p:hover a:hover, ul:hover a:hover, ol:hover a:hover {
   border-bottom:0.125em solid #333;
 }
 
