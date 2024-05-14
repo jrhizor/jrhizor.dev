@@ -12,6 +12,7 @@ Last December, I tried to start a bootstrapped SaaS "the right way". According t
 4. Wait...
 5. Build the product once the waitlist is large enough.
 
+
 The purpose of this approach is to prevent building something people don’t need. I’ve run into this before with Stoat (a useful but non-critical devtools project with no paying users) and MealByMeal (a calorie tracker with some good SaaS characteristics but difficult/costly user acquisition).
 
 To course correct, I blindly followed the waitlist method for [PresetBot](https://presetbot.com/), an API for applying Adobe Lightroom presets (image filters) on many images quickly and cheaply. I thought it might be useful because I wanted to apply a batch of image transformations across a set of promotional images for MealByMeal so they would share a uniform visual style.
