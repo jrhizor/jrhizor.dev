@@ -13,14 +13,16 @@ logging foods over voice is useful. Here's what I learned over the course of the
 Retention is critical because MyFitnessPal is an advertising behemoth. They expect users to churn after a couple months, but they can keep themselves as the default option for anyone looking for a calorie tracker by spending a ton of money on ads. This allows them to market to users at the right moment when they start looking for a calorie tracking or weight loss option, and makes it very expensive for competitors to compete on paid marketing to acquire users. You need a niche or a unique distribution channel.
 
 
-So one way to make user acquisition cost-effective is to increase the average subscription length. For MealByMeal, I bet that easier logging would help retain users. I found this to be mostly true. If users didn't churn from the trial, \~2/3 of users maintained their subscriptions over multiple months.
+So one way to make user acquisition cost-effective is to increase the average subscription length. For MealByMeal, I bet that easier logging would help retain users. I found this to be mostly true. If users didn't churn from the trial, two thirds of users maintained their subscriptions over multiple months.
 
 
 ### 2. Texting is a great way to track calories
 
-I'm convinced that texting was the wrong approach. It costs more and has a lot of red tape. It's also dangerous to use a chatbot. If a user convinces a bot to say something bad, you may get flagged and penalized.
+I'm convinced that texting was the wrong approach from a maintenance perspective. It costs more and has a lot of red tape. It's also dangerous to use a chatbot. If a user convinces a bot to say something bad, you may get flagged and penalized.
 
-Some competitors have recently launched that use Telegram / WhatsApp, but those are a bit more limited in terms of user base. Also, most people think of calorie counters as apps, so if you need to explain a different (non-standard) model, it harms user acquisition. 
+Some competitors have recently launched that use Telegram / WhatsApp, but those are a bit more limited in terms of user base. Also, most people think of calorie counters as apps, so if you need to explain a different (non-standard) model, it harms user acquisition.
+
+That being said, it is very easy to use for users, and it makes it fast to get to the first "aha" moment.
 
 I will likely launch an app version of MealByMeal to mitigate a lot of these problems and allow building a great UX around the text-based infrastructure.
 
