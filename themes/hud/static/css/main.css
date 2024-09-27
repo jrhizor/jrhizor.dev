@@ -259,3 +259,43 @@ main {
 }
 
 header, header nav { max-width: 40em; }
+
+.projects h2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0.625em 0;
+    border: 0;
+    line-height: 1.625em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75em;
+    color: #aaa;
+    text-transform: uppercase;
+    text-decoration: none75
+    border-bottom: 0;
+}
+
+.projects h3 a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.625em;
+    font-family: "Open Sans", sans-serif;
+    font-weight:  normal;
+    font-size: 0.9375em;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+.projects h3 a:hover {
+  border-bottom:0.125em solid #333;
+}
+
+.projects p + h2 {
+  padding-top: 1.625em;
+}
+
+.projects p {
+    color: #555;
+}

@@ -12,3 +12,10 @@ sectionPagesMenu = "navmenu"
     title = "About"
     url = "/"
     weight = 1
+
+  [[menu.navmenu]]
+    identifier = "projects"
+    name = "Projects"
+    title = "Projects"
+    url = "/projects/"
+    weight = 2

@@ -11,7 +11,7 @@
 
       {{ $currentPage := . }}
       {{ range .Site.Menus.navmenu }}
-      <a class="sidebar-nav-item{{if ($currentPage.IsMenuCurrent "navmenu" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      <a class="sidebar-nav-item{{ if or ($currentPage.IsMenuCurrent "navmenu" .) ($currentPage.HasMenuCurrent "navmenu" .) (eq $currentPage.RelPermalink .URL) }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
       {{ end }}
 
       <a href="https://github.com/jrhizor" target="_blank">Github</a>
