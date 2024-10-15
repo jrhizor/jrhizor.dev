@@ -1,14 +1,9 @@
 # Projects
 
-## Coming Soon
+## Active
 
 ### [Altnado](https://www.altnado.com/)
 Generate alt text for images directly in your CMS.
-
-### [Elmo](https://www.elmohq.com/)
-Understand what LLMs think about your brand and products.
-
-## Active
 
 ### [MealByMeal](https://mealbymeal.com/)
 Track calories and macros over text message.
@@ -21,6 +16,11 @@ Easily create calendar events in any timezone.
 
 ### [RobinWords](https://robinwords.com/)
 Fun word game with a daily challenge.
+
+## Coming Soon
+
+### [Elmo](https://www.elmohq.com/)
+Understand what LLMs think about your brand and products.
 
 ## Shelved
 
