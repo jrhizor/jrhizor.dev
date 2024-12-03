@@ -33,6 +33,23 @@ nav a {
   color: #8256BF;
   padding: 0.1em;
   margin-right:0.2em;
+  display: inline-block;
+  padding-bottom:2px;
+}
+
+nav a.icon {
+  padding:0;
+  padding-left:0.2em;
+  padding-right:0.2em;
+  height:1.6em;
+  width:1em;
+  text-align: center;
+  align-items: center;
+  margin-left: 0.1em;
+}
+
+nav a.icon svg {
+  vertical-align: -0.1em;
 }
 
 nav a.active {
