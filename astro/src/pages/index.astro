@@ -1,4 +1,5 @@
 ---
+import '@fontsource/open-sans';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -10,13 +11,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="p-8">
+	<body class="p-8 container mx-auto relative">
 	<!-- 2em grid, should be toggleable -->
-		<div
-			class="-z-10 absolute inset-0 h-full w-full bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]"
-		></div>
+	<div
+		class="-z-10 absolute inset-0 h-full w-full bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]"
+	></div>
 		<Header />
 		<main>
+			<div class="flex justify-between items-center">
+				<div class="text-xl">
+					<p>
+						I'm <strong>Jared Rhizor</strong>, a maker, founder, and software engineer in San Francisco.
+					</p>
+					<p class="pt-4">
+						Right now I spend most of my time building <a href="https://keywordgems.com">KeywordGems</a>.
+					</p>
+				</div>
+				<img
+					class="block shadow-[0_0_24px_rgba(0,0,0,0.2)] rounded w-[264px] h-[264px] md:w-[140px] md:h-[140px]"
+					src="/me.png"
+					width="264"
+					height="264"
+				/>
+			</div>
+
+
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
