@@ -1,9 +1,11 @@
 # Projects
 
-## Active
+## Current Focus
 
-### [Altnado](https://www.altnado.com/)
-Generate alt text for images directly in your CMS.
+### [KeywordGems](https://keywordgems.com/)
+Automatic, comprehensive keyword research for SEO.
+
+## Active
 
 ### [MealByMeal](https://mealbymeal.com/)
 Track calories and macros over text message.
@@ -20,12 +22,13 @@ Easily create calendar events in any timezone.
 ### [RobinWords](https://robinwords.com/)
 Fun word game with a daily challenge.
 
-## Coming Soon
+## Shelved
 
 ### [Elmo](https://www.elmohq.com/)
-Understand what LLMs think about your brand and products.
+Understand what LLMs think about your brand and products. While the analytics are interesting and can inform strategy, without search volume, it's hard to integrate this into day-to-day work for users.
 
-## Shelved
+### [Altnado](https://www.altnado.com/)
+Generate alt text for images directly in your CMS. The non-plugin installation approach did not resonate with users. It's also hard to attribute SEO differences specifically to adding alt text. The people that really need this are large e-commerce brands with millions of SKUs.
 
 ### [Stoat](https://stoat.dev/)
 Helped developers understand their build artifacts and build metrics. If this was built into GitHub people would love it, but selling it as a separate product proved to be a challenge.
