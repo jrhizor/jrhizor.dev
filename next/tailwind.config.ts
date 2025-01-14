@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-source-sans)", ...fontFamily.sans],
+        granny: ["var(--font-granny)", ...fontFamily.serif],
       },
       borderRadius: {
         lg: "var(--radius)",

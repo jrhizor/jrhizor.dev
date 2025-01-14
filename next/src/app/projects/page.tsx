@@ -9,6 +9,8 @@ import {
   CardTitle,
 } from "~/components/ui/card";
 
+// todo: metadata
+
 export default function ProjectsPage() {
   return (
     <main>

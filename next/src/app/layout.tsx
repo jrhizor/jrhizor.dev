@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 
-import { Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3, Indie_Flower } from "next/font/google";
+import localFont from 'next/font/local'
 import { type Metadata } from "next";
 import {
   SidebarInset,
