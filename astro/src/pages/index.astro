@@ -12,6 +12,7 @@ import {
   FaBars,
 } from "react-icons/fa6";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { Image } from 'astro:assets';
 ---
 
 <!doctype html>
@@ -119,23 +120,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </div>
 
         <div class="grid-item" id="content-container">
-          <div class="main">
-            <h2>Jared Rhizor</h2>
+          <div class="grid grid-cols-3 py-12 gap-12">
 
-            <p>
-              I'm the founder of <a href="https://www.bluewhale.dev/"
-                >Blue Whale Software</a
-              > and working on a variety of <a href="/projects">projects</a>.
-            </p>
-
-            <p>
-              Previously, I was a tech lead at <a href="https://liveramp.com/"
-                >LiveRamp</a
-              > (scaling a multi-petabyte device graph for adtech) and a founding
-              engineer at <a href="https://airbyte.com">Airbyte</a> (building an
-              open-source data integration platform used by thousands of companies).
-            </p>
+            <div class="w-full h-full flex items-center">
+              <Image src="/me.png" alt="Jared Rhizor" width="400" height="400" class="w-full" />
+            </div>
+            <div class="main text-4xl my-auto leading-snug pt-12 pb-6 col-span-2 text-balance">
+              <p>Hello!</p>
+              <p>I'm <strong>Jared Rhizor</strong>, a maker, founder, and software dev.</p>
+              <p>Right now, I'm building <a href="https://www.keywordgems.com" class="underline-offset-1" style="font-weight: bold">KeywordGems</a> to make SEO keyword research easy.</p>
+            </div>
           </div>
+
         </div>
         <div class="grid-item" id="sp2" aria-hidden="true"></div>
       </div>
