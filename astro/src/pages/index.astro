@@ -1,142 +1,144 @@
 ---
-import '@fontsource/open-sans';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { FaGithub, FaLinkedin, FaTwitter, FaBluesky, FaRegEnvelope, FaBars } from "react-icons/fa6";
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import "@fontsource/open-sans";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaBluesky,
+  FaRegEnvelope,
+  FaBars,
+} from "react-icons/fa6";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-	<div class="big-hug"><div class="grid-container">
-		<div class="grid-item" id="sp1" aria-hidden="true"></div>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <div class="big-hug">
+      <div class="grid-container">
+        <div class="grid-item" id="sp1" aria-hidden="true"></div>
 
-		<div class="grid-item" id="menu-container">
-			<input type="checkbox" id="menu-btn"><label id="menu-label" for="menu-btn"><div id="burger">MENU<FaBars /></div></label>
+        <div class="grid-item" id="menu-container">
+          <input type="checkbox" id="menu-btn" /><label
+            id="menu-label"
+            for="menu-btn"><div id="burger">MENU<FaBars /></div></label
+          >
 
-			<nav>
-				<label id="menu-label2" for="menu-btn"><div id="close-btn"><i class="fa-regular fa-xmark"></i></div></label>
+          <nav>
+            <label id="menu-label2" for="menu-btn"
+              ><div id="close-btn">
+                <i class="fa-regular fa-xmark"></i>
+              </div></label
+            >
 
-				<svg viewbox="0 0 100 100" style="width:75px; height: 75px; margin-bottom:5px">
-					<rect x="0" y="32" width="9.1" height="32" class="fill-blue-500" />
-					<rect x="18.2" y="0" width="9.1" height="64" class="fill-cyan-500" />
-					<rect x="36.4" y="0" width="9.1" height="64" class="fill-orange-500" />
-					<rect x="54.6" y="0" width="9.1" height="32" class="fill-red-500" />
-				</svg>
+            <svg
+              viewbox="0 0 100 100"
+              style="width:75px; height: 75px; margin-bottom:5px"
+            >
+              <rect x="0" y="32" width="9.1" height="32" class="fill-blue-500"
+              ></rect>
+              <rect x="18.2" y="0" width="9.1" height="64" class="fill-cyan-500"
+              ></rect>
+              <rect
+                x="36.4"
+                y="0"
+                width="9.1"
+                height="64"
+                class="fill-orange-500"></rect>
+              <rect x="54.6" y="0" width="9.1" height="32" class="fill-red-500"
+              ></rect>
+            </svg>
 
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/projects">Projects</a></li>
-					<li><a href="/posts">Posts</a></li>
-				</ul>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/posts">Posts</a></li>
+            </ul>
 
-				<button id="theme-toggle" type="button">
-					<span class="d-block-light d-none"><i class="fa-light fa-space-station-moon-construction"></i>dark mode</span>
-					<span class="d-block-dark d-none"><i class="fa-light fa-sun-bright"></i>light mode</span>
-				</button>
+            <button id="theme-toggle" type="button">
+              <span class="d-block-light d-none"
+                ><i class="fa-light fa-space-station-moon-construction"></i>dark
+                mode</span
+              >
+              <span class="d-block-dark d-none"
+                ><i class="fa-light fa-sun-bright"></i>light mode</span
+              >
+            </button>
+          </nav>
+        </div>
 
-			</nav></div>
+        <div class="grid-item" id="extras-container">
+          <div id="socials">
+            <h3>Elsewhere</h3>
+            <ul class="list-outside list-none">
+              <li>
+                <a
+                  href="mailto:contact@jrhizor.dev"
+                  class="flex items-center gap-2"
+                  ><span class="text-[#e474a2]"><FaRegEnvelope /></span
+                  >Email</a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/jaredrhizor"
+                  class="flex items-center gap-2"
+                  ><span class="text-[#1DA1F2]"><FaTwitter /></span>Twitter</a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jrhizor"
+                  class="flex items-center gap-2"
+                  ><span class="text-[#2b3137]"><FaGithub /></span>GitHub</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jrhizor"
+                  class="flex items-center gap-2"
+                  ><span class="text-[#0077b5]"><FaLinkedin /></span
+                  >LinkedIn</a>
+              </li>
+              <li>
+                <a
+                  href="https://bsky.app/profile/jrhizor.dev"
+                  class="flex items-center gap-2"
+                  ><span class="text-[#0085ff]"><FaBluesky /></span>Bluesky</a>
+              </li>
+            </ul>
+          </div>
 
-		<div class="grid-item" id="extras-container">
-			<div id="socials">
+          <p class="smaller">
+            I'm <strong>Jared Rhizor</strong>, a maker, founder, and software
+            dev.
+          </p>
+        </div>
 
-				<h3>Elsewhere</h3>
-				<ul class="list-outside list-none">
-					<li><a href="mailto:contact@jrhizor.dev" class="flex items-center gap-2"><span class="text-[#e474a2]"><FaRegEnvelope /></span>Email</a></li>
-					<li><a href="https://twitter.com/jaredrhizor" class="flex items-center gap-2"><span class="text-[#1DA1F2]"><FaTwitter /></span>Twitter</a></li>
-					<li><a href="https://github.com/jrhizor" class="flex items-center gap-2"><span class="text-[#2b3137]"><FaGithub /></span>GitHub</a></li>
-					<li><a href="https://www.linkedin.com/in/jrhizor" class="flex items-center gap-2"><span class="text-[#0077b5]"><FaLinkedin /></span>LinkedIn</a></li>
-					<li><a href="https://bsky.app/profile/jrhizor.dev" class="flex items-center gap-2"><span class="text-[#0085ff]"><FaBluesky /></span>Bluesky</a></li>
-				</ul>
+        <div class="grid-item" id="content-container">
+          <div class="main">
+            <h2>Jared Rhizor</h2>
 
-			</div>
+            <p>
+              I'm the founder of <a href="https://www.bluewhale.dev/"
+                >Blue Whale Software</a
+              > and working on a variety of <a href="/projects">projects</a>.
+            </p>
 
-
-
-			<p class="smaller">I'm <strong>Jared Rhizor</strong>, a maker, founder, and software dev.</p>
-		</div>
-
-		<div class="grid-item" id="content-container">
-
-			<div class="main">
-
-				<h2>Jared Rhizor</h2>
-
-				<p>I'm the founder of <a href="https://www.bluewhale.dev/">Blue Whale Software</a> and working on a variety of <a href="/projects">projects</a>.</p>
-
-				<p>Previously, I was a tech lead at <a href="https://liveramp.com/">LiveRamp</a> (scaling a multi-petabyte device graph for adtech) and a founding engineer at <a href="https://airbyte.com">Airbyte</a> (building an open-source data integration platform used by thousands of companies).</p>
-			</div>
-
-
-		</div>
-		<div class="grid-item" id="sp2" aria-hidden="true"></div>
-
-
-
-	</div></div>
-	</body>
-	<!--<body class="p-8 container mx-auto relative">-->
-	<!--&lt;!&ndash; 2em grid, should be toggleable &ndash;&gt;-->
-	<!--<div-->
-	<!--	class="-z-10 absolute inset-0 h-full w-full bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]"-->
-	<!--&gt;</div>-->
-	<!--	<Header />-->
-	<!--	<main>-->
-	<!--		<div class="flex justify-between items-center">-->
-	<!--			<div class="text-xl">-->
-	<!--				<p>-->
-	<!--					I'm <strong>Jared Rhizor</strong>, a maker, founder, and software engineer in San Francisco.-->
-	<!--				</p>-->
-	<!--				<p class="pt-4">-->
-	<!--					Right now I spend most of my time building <a href="https://keywordgems.com">KeywordGems</a>.-->
-	<!--				</p>-->
-	<!--			</div>-->
-	<!--			<img-->
-	<!--				class="block shadow-[0_0_24px_rgba(0,0,0,0.2)] rounded w-[264px] h-[264px] md:w-[140px] md:h-[140px]"-->
-	<!--				src="/me.png"-->
-	<!--				width="264"-->
-	<!--				height="264"-->
-	<!--			/>-->
-	<!--		</div>-->
-
-
-	<!--		<h1>🧑‍🚀 Hello, Astronaut!</h1>-->
-	<!--		<p>-->
-	<!--			Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This-->
-	<!--			template serves as a lightweight, minimally-styled starting point for anyone looking to build-->
-	<!--			a personal website, blog, or portfolio with Astro.-->
-	<!--		</p>-->
-	<!--		<p>-->
-	<!--			This template comes with a few integrations already configured in your-->
-	<!--			<code>astro.config.mjs</code> file. You can customize your setup with-->
-	<!--			<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,-->
-	<!--			React, or Vue to your project.-->
-	<!--		</p>-->
-	<!--		<p>Here are a few ideas on how to get started with the template:</p>-->
-	<!--		<ul>-->
-	<!--			<li>Edit this page in <code>src/pages/index.astro</code></li>-->
-	<!--			<li>Edit the site header items in <code>src/components/Header.astro</code></li>-->
-	<!--			<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>-->
-	<!--			<li>Check out the included blog posts in <code>src/content/blog/</code></li>-->
-	<!--			<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>-->
-	<!--		</ul>-->
-	<!--		<p>-->
-	<!--			Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"-->
-	<!--				>read the docs-->
-	<!--			</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.-->
-	<!--		</p>-->
-	<!--		<p>-->
-	<!--			Looking for a blog template with a bit more personality? Check out <a-->
-	<!--				href="https://github.com/Charca/astro-blog-template"-->
-	<!--				>astro-blog-template-->
-	<!--			</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.-->
-	<!--		</p>-->
-	<!--	</main>-->
-	<!--	<Footer />-->
-	<!--</body>-->
+            <p>
+              Previously, I was a tech lead at <a href="https://liveramp.com/"
+                >LiveRamp</a
+              > (scaling a multi-petabyte device graph for adtech) and a founding
+              engineer at <a href="https://airbyte.com">Airbyte</a> (building an
+              open-source data integration platform used by thousands of companies).
+            </p>
+          </div>
+        </div>
+        <div class="grid-item" id="sp2" aria-hidden="true"></div>
+      </div>
+    </div>
+  </body>
 </html>
