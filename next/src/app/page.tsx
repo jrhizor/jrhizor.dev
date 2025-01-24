@@ -15,14 +15,7 @@ export default function HomePage() {
         <p>Hello, I'm Jared Rhizor.</p>
 
         <p>
-          I'm the founder of{" "}
-          <a
-            href="https://www.bluewhale.dev/"
-            className="font-normal decoration-neutral-400 hover:underline hover:underline-offset-2"
-          >
-            Blue Whale Software
-          </a>
-          , where I'm making SEO keyword research easy with{" "}
+          I'm making SEO keyword research easy with{" "}
           <Link
             href="https://www.keywordgems.com/"
             className="font-normal decoration-neutral-400 hover:underline hover:underline-offset-2"
