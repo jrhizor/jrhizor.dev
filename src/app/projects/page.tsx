@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 const title = "Projects";
 export const metadata: Metadata = {
@@ -48,14 +49,14 @@ export default function ProjectsPage() {
         <p>
           Understand what LLMs think about your brand and products. While the
           analytics are interesting and can inform strategy, without search
-          volume, it's hard to integrate this into day-to-day work for users.
+          volume, it&apos;s hard to integrate this into day-to-day work for users.
         </p>
         <h3>
           <a href="https://www.altnado.com/">Altnado</a>
         </h3>
         <p>
           Generate alt text for images directly in your CMS. The non-plugin
-          installation approach did not resonate with users. It's also hard to
+          installation approach did not resonate with users. It&apos;s also hard to
           attribute SEO differences specifically to adding alt text. The people
           that really need this are large e-commerce brands with millions of
           SKUs.
@@ -74,7 +75,7 @@ export default function ProjectsPage() {
         <p>
           Applied Lightroom presets with an API. You can read about why
           PresetBot failed in{" "}
-          <a href="/posts/building-a-waitlist-the-wrong-way/">this blog post</a>
+          <Link href="/posts/building-a-waitlist-the-wrong-way/">this blog post</Link>
           .
         </p>
         <h3>
@@ -89,7 +90,7 @@ export default function ProjectsPage() {
           <a href="https://www.interlinked.fyi/">Interlinked</a>
         </h3>
         <p>
-          Compared connector coverage across data integration platforms. There's
+          Compared connector coverage across data integration platforms. There&apos;s
           definitely value in understanding the feature space of connectors, but
           accurately synthesizing the data is difficult and finding people at
           exactly the right time during the purchasing process is even more
@@ -116,7 +117,7 @@ export default function ProjectsPage() {
         <p>
           A simple LLM framework in TypeScript with OpenTelemetry baked in. This
           was built for MealByMeal before other frameworks had nice interfaces
-          for working with multiple LLM providers and tracing, but Vercel's{" "}
+          for working with multiple LLM providers and tracing, but Vercel&apos;s{" "}
           <a href="https://sdk.vercel.ai/">AI SDK</a> and others are much better
           now and should be used instead.
         </p>

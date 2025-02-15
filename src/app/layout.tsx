@@ -9,6 +9,7 @@ import {
 } from "~/components/ui/sidebar";
 import { AppSidebar } from "~/components/app-sidebar";
 import PlausibleProvider from "next-plausible";
+import {Suspense} from "react";
 
 export const metadata: Metadata = {
   title: "Jared Rhizor",
@@ -42,7 +43,9 @@ export default function RootLayout({
       </head>
       <body>
         <SidebarProvider>
-          <AppSidebar />
+          <Suspense>
+            <AppSidebar />
+          </Suspense>
           <SidebarInset>
             <header className="flex h-24 shrink-0 items-center gap-2 border-b">
               <div className="flex items-center gap-2 px-3">

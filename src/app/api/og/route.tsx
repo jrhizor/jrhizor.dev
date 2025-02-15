@@ -5,13 +5,12 @@ async function loadGoogleFont(font: string, text: string) {
   const url = `https://fonts.googleapis.com/css2?family=${font}&text=${encodeURIComponent(text)}`;
   console.error("url", url);
   const css = await (await fetch(url)).text();
-  const resource = css.match(
-    /src: url\((.+)\) format\('(opentype|truetype)'\)/,
-  );
+  const regex = /src: url\((.+)\) format\('(opentype|truetype)'\)/;
+  const match = regex.exec(css);
 
-  if (resource) {
-    // @ts-ignore
-    const response = await fetch(resource[1]);
+  if (match) {
+    // @ts-expect-error - Response type is unknown
+    const response = await fetch(match[1]);
     if (response.status == 200) {
       return await response.arrayBuffer();
     }

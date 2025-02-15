@@ -1,8 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { GalleryVerticalEnd } from "lucide-react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useSidebar } from "~/components/ui/sidebar";
 
 import {
@@ -135,7 +134,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 
             <SidebarFooter>
               <p className="text-sm leading-5">
-                I'm <strong>Jared Rhizor</strong>, a maker, founder, and
+                I&apos;m <strong>Jared Rhizor</strong>, a maker, founder, and
                 software dev.
               </p>
             </SidebarFooter>

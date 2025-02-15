@@ -1,6 +1,3 @@
-import { PostBody } from "~/app/posts/_components/post-body";
-import { PostHeader } from "~/app/posts/_components/post-header";
-import DateFormatter from "~/app/posts/_components/date-formatter";
 import { PostTitle } from "~/app/posts/_components/post-title";
 
 export default function NotFound() {
