@@ -1,5 +1,9 @@
+"use client";
+
 import * as React from "react";
 import { GalleryVerticalEnd } from "lucide-react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useSidebar } from "~/components/ui/sidebar";
 
 import {
   Sidebar,
@@ -24,8 +28,17 @@ import {
   FaRegEnvelope,
   FaBars,
 } from "react-icons/fa6";
+import { useEffect } from "react";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const { setOpenMobile } = useSidebar();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    setOpenMobile(false);
+  }, [pathname, searchParams]);
+
   return (
     <Sidebar {...props}>
       <SidebarContent>

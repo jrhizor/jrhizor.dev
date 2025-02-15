@@ -1,5 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+const title = "Jared Rhizor";
+
+export const metadata: Metadata = {
+  title: title,
+  openGraph: {
+    images: [`/api/og?text=${encodeURIComponent(title)}`],
+  },
+};
 
 export default function HomePage() {
   return (

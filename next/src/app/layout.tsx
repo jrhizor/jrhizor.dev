@@ -1,7 +1,6 @@
 import "~/styles/globals.css";
 
-import { Source_Sans_3, Indie_Flower } from "next/font/google";
-import localFont from 'next/font/local'
+import { Source_Sans_3 } from "next/font/google";
 import { type Metadata } from "next";
 import {
   SidebarInset,
@@ -9,11 +8,22 @@ import {
   SidebarTrigger,
 } from "~/components/ui/sidebar";
 import { AppSidebar } from "~/components/app-sidebar";
+import PlausibleProvider from "next-plausible";
 
 export const metadata: Metadata = {
   title: "Jared Rhizor",
   description: "I'm Jared Rhizor, a maker, founder, and software dev.",
   icons: [{ rel: "icon", url: "/favicon.png" }],
+  alternates: {
+    types: {
+      "application/rss+xml": [
+        {
+          url: "rss.xml",
+          title: "RSS Feed",
+        },
+      ],
+    },
+  },
 };
 
 const sourceSans = Source_Sans_3({
@@ -27,6 +37,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${sourceSans.className}`}>
+      <head>
+        <PlausibleProvider domain="jrhizor.dev" />
+      </head>
       <body>
         <SidebarProvider>
           <AppSidebar />
@@ -36,7 +49,7 @@ export default function RootLayout({
                 <SidebarTrigger />
               </div>
             </header>
-            <div className="flex flex-1 flex-col gap-4 p-4 border-b-[1em] border-b-[#004225]">{children}</div>
+            <div className="flex flex-1 flex-col gap-4 p-4">{children}</div>
           </SidebarInset>
         </SidebarProvider>
       </body>

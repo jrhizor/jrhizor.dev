@@ -10,7 +10,7 @@ import { cn } from "~/lib/utils";
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Separator } from "~/components/ui/separator";
-import { Sheet, SheetContent } from "~/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle } from "~/components/ui/sheet";
 import { Skeleton } from "~/components/ui/skeleton";
 import {
   Tooltip,
@@ -18,6 +18,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "~/components/ui/tooltip";
+import { Logomark } from "~/components/logomark";
 
 const SIDEBAR_COOKIE_NAME = "sidebar:state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
@@ -214,6 +215,7 @@ const Sidebar = React.forwardRef<
             }
             side={side}
           >
+            <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
             <div className="flex h-full w-full flex-col">{children}</div>
           </SheetContent>
         </Sheet>
@@ -286,36 +288,7 @@ const SidebarTrigger = React.forwardRef<
       }}
       {...props}
     >
-      <svg viewBox="0 0 64 64" style={{ width: "3em", height: "3em" }}>
-        <rect
-          x="0"
-          y="32"
-          width="9.1"
-          height="32"
-          className="fill-blue-500"
-        ></rect>
-        <rect
-          x="18.2"
-          y="0"
-          width="9.1"
-          height="64"
-          className="fill-cyan-500"
-        ></rect>
-        <rect
-          x="36.4"
-          y="0"
-          width="9.1"
-          height="64"
-          className="fill-orange-500"
-        ></rect>
-        <rect
-          x="54.6"
-          y="0"
-          width="9.1"
-          height="32"
-          className="fill-red-500"
-        ></rect>
-      </svg>
+      <Logomark />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   );
